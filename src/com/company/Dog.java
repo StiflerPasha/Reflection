@@ -12,14 +12,8 @@ package com.company;
         return dogName;
     }
 
-    public String getDogBark(int barkType) {
-        if (barkType == 1) {
-            return dogBark;
-        }
-        else if (barkType == 2) {
-            return "Woof-Woof";
-        }
-        return "...";
+    public String getDogBark() {
+        return dogBark;
     }
 
     public int getDogAge() {

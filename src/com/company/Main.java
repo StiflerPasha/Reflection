@@ -23,7 +23,7 @@ public class Main {
 
         checker.setStringValue(dog, "dogBark", "Meow");
         System.out.println("Change dogBark: ");
-        System.out.println("(new) dogBark = " + dog.getDogBark(1));
+        System.out.println("(new) dogBark = " + dog.getDogBark());
     }
 
 }

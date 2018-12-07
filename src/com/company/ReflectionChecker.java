@@ -46,7 +46,6 @@ public class ReflectionChecker {
             String paramType = Arrays.toString(item.getParameterTypes());
 
             System.out.println(methodName + " (" + countParam + paramType + ")" + " / " + modifier);
-            //System.out.println(Arrays.toString(item.getParameterTypes()));
         }
     }
 
@@ -57,9 +56,11 @@ public class ReflectionChecker {
 
         for (Field item : fields) {
             item.setAccessible(true);
+
             if (item.getName().equals(changeField)) {
                 item.set(object, newValue);
             }
+
             item.setAccessible(false);
         }
         System.out.println();
@@ -72,9 +73,11 @@ public class ReflectionChecker {
 
         for (Field item : fields) {
             item.setAccessible(true);
+
             if (item.getName().equals(changeField)) {
                 item.set(object, newValue);
             }
+
             item.setAccessible(false);
         }
         System.out.println();
